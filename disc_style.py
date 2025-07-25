@@ -80,7 +80,7 @@ if not st.session_state.started:
     #### Instructions:
     - You will be presented with a series of statements.
     - For each statement, indicate how much you agree or disagree using the options provided.
-    - A value of **1** completely disagree, **2** somehow disagree, **3** neutral, **4** somehow agree, **5** completely agree
+    - A value of **1** completely disagree, **2** somewhat disagree, **3** neutral, **4** somewhat agree, **5** completely agree
     - Once you complete the assessment, you'll receive your DISC style profile and a detailed breakdown of your results.
     - Carefully read the descriptions as some of them sound similar but have different meanings.
 
@@ -495,9 +495,9 @@ if st.session_state.started:
                 options = [
                     "Select an option",
                     "1 - Completely Disagree",
-                    "2 - Somehow Disagree",
+                    "2 - somewhat Disagree",
                     "3 - Neutral",
-                    "4 - Somehow Agree",
+                    "4 - somewhat Agree",
                     "5 - Completely Agree",
                 ]
                 selected_option = st.radio(
@@ -521,9 +521,9 @@ if st.session_state.started:
                 # Map the selected option to a score
                 score_mapping = {
                     "1 - Completely Disagree": 1,
-                    "2 - Somehow Disagree": 2,
+                    "2 - somewhat Disagree": 2,
                     "3 - Neutral": 3,
-                    "4 - Somehow Agree": 4,
+                    "4 - somewhat Agree": 4,
                     "5 - Completely Agree": 5,
                 }
                 st.session_state.answers[i] = score_mapping[selected_option]
