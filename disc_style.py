@@ -495,9 +495,9 @@ if st.session_state.started:
                 options = [
                     "Select an option",
                     "1 - Completely Disagree",
-                    "2 - somewhat Disagree",
+                    "2 - Somewhat Disagree",
                     "3 - Neutral",
-                    "4 - somewhat Agree",
+                    "4 - Somewhat Agree",
                     "5 - Completely Agree",
                 ]
                 selected_option = st.radio(
@@ -521,9 +521,9 @@ if st.session_state.started:
                 # Map the selected option to a score
                 score_mapping = {
                     "1 - Completely Disagree": 1,
-                    "2 - somewhat Disagree": 2,
+                    "2 - Somewhat Disagree": 2,
                     "3 - Neutral": 3,
-                    "4 - somewhat Agree": 4,
+                    "4 - Somewhat Agree": 4,
                     "5 - Completely Agree": 5,
                 }
                 st.session_state.answers[i] = score_mapping[selected_option]
@@ -696,7 +696,7 @@ st.markdown(
     """
     ---
     <div style="text-align: center;">
-        <strong><a href="https://github.com/dzyla/disc-personality-assessment">Source code</a></strong> | Developed by <a href="https://dzyla.com">Dawid Zyla</a>
+        <strong><a href="https://github.com/dzyla/disc-personality-assessment">Original source code</a></strong> Developed by <a href="https://dzyla.com">Dawid Zyla</a>, enhanced by <a href="https://bradleywaldrop.com">Bradley Waldrop, PE</a>
     </div>
     """,
     unsafe_allow_html=True,
