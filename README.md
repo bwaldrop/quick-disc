@@ -4,6 +4,7 @@
 
 ## Features
 
+- **Streamlined Assessment**: Uses the first 12 questions to get an overview, rather than complete assessment
 - **Personalized DISC profiles**: Discover your unique personality style based on the DISC framework.
 - **Interactive UI**: Powered by Streamlit for easy navigation and a user-friendly experience.
 - **Style descriptions**: Provides detailed descriptions of single and combination styles.
