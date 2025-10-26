@@ -465,7 +465,7 @@ if st.session_state.started:
     if "questions" not in st.session_state:
         questions = json.load(open("questions.json", "r"))
         random.shuffle(questions)
-        st.session_state.questions = questions[:30]  # Use the first 30 questions
+        st.session_state.questions = questions[:12]  # Use the first 12 questions
 
     questions_per_page = 1  # Show one question at a time
     total_questions = len(st.session_state.questions)
